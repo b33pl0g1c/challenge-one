@@ -1,5 +1,5 @@
 
-const flag = "FLAG{Congratulations! You found the flag}";
+const flag = "NSLab_FLAG{SomeTimesCheckingJSCodeHelps}";
 
 function generateRandomString(length) {
   let result = '';
@@ -22,12 +22,12 @@ function generateChallenge() {
   };
 }
 
-// Main function to run the challenge
+
 function runChallenge() {
-  // Generate the challenge
+
   const challenge = generateChallenge();
 
-  // Display the challenge information
+
   const challengeInfo = document.getElementById('challenge-info');
   challengeInfo.innerHTML = `
     <p>Welcome to the Capture the Flag challenge!</p>
@@ -47,9 +47,7 @@ function runChallenge() {
     }
   }
 
-  // Event listener to check if the flag has been found
   document.getElementById('check-flag').addEventListener('click', checkFlag);
 }
 
-// Run the challenge when the page loads
 window.onload = runChallenge;
